@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body, .App, .SectionContainer{
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+
+
+li {
+    list-style: none;
+    transition: all 0.5s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+}
+
+.mainNav {
+    position: fixed;
+    display: flex;
+    padding: 2em 4em;
+    
+}
+
+.mainNav .ul_Second {
+    position: fixed;
+    display: flex;
+    right: 4em;
+}
+
+.mainNav .ul_Second li{
+    margin-left: 1.5em;
+}
+
+
+/* Add width with the total page * 80vw */
+.SectionContainer {
+    display: flex;
+    width: 320vw;
+    text-align: center;
+    z-index: 10;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    
+}
+
+.FooterSection {
+    position: relative;
+    /* display: flex; */
+    /* bottom: 0; */
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
