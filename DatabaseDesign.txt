@@ -1,0 +1,6 @@
+Education : [{SName}, {Faculty}, {GPA}, {StartYear}, {EndYear}]
+Profile : [{Name}, {AboutMe}]
+PeojectExperience : [{ProjectName}, {ProjectDetails}, {StartYearMonth}, {EndYearMonth}]
+Certificates : [{CName}, {CDetails}, {Cyear}]
+Skill : [{Skills}]
+Tool : [{Tools}]
