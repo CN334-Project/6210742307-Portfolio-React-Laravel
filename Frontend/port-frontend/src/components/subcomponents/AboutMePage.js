@@ -1,5 +1,7 @@
 import './AboutMePage.css';
 import React, { useState, useEffect } from 'react';
+import Box from '@mui/material/Box';
+import LinearProgress from '@mui/material/LinearProgress';
 
 function AboutMePage() {
 
@@ -25,24 +27,36 @@ function AboutMePage() {
 
 
     return (
+        
         <div className="AboutMeSectionContainer">
-            <div className="Content">
-                {/* Name */}
-                {items.map(user => (
-                    <h1 className="TitleName" key={user.id}>
-                        {user.Name}
-                    </h1>
-                ))}
+            {isLoaded && (
+                <div className="Content">
+                    {/* Name */}
+                    {items.map(user => (
+                        <h1 className="TitleName" key={user.id}>
+                            {user.Name}
+                        </h1>
+                    ))}
 
-                {/* About Me */}
-                {items.map(user => (
-                    <p className="AboutMe" key={user.id}>
-                        {user.AboutMe}
-                    </p>
-                ))}
+                    {/* About Me */}
+                    {items.map(user => (
+                        <p className="AboutMe" key={user.id}>
+                            <h5>
+                                Software Engineer
+                            </h5>
+                            {user.AboutMe}
+                        </p>
+                    ))}
 
-                <img className="image1" src={require('../../images/image1.jpg')} />
-            </div>
+                    <button className="ResumeBtn">Download Resume</button>
+
+                    <img className="image1" src={require('../../images/image1.jpg')} />
+                </div>
+            )} {!isLoaded && (
+                <Box sx={{ width: '100%' }}>
+                    <LinearProgress />
+                </Box>
+            )}
         </div>
     );
 }

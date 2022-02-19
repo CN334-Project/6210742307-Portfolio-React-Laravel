@@ -1,9 +1,120 @@
 .EducationSectionContainer {
     margin-top: 10vh;
-    /* margin-bottom: 10vh; */
     margin-left: 10vw;
     margin-right: 10vw;
     width: 80vw;
     height: 80vh;
-    background-color: rgb(133, 139, 137);
+    background: linear-gradient(to right, rgb(211, 214, 219), rgb(240, 241, 243));
 }
+
+.Content {
+    height: 80vh;
+    overflow-y: auto;
+    justify-content: center;
+}
+
+.EducationTitle {
+    text-align: right;
+    font-size: 200px;
+    padding-top: 3%;
+    line-height: 0.9;
+}
+
+.EducationTitle p{
+    text-align: right;
+    margin-top: 2%;
+    font-size: 30px;
+}
+
+.EducationTitle .orange{
+    color: rgb(235, 175, 78);
+    margin-bottom: 1%;
+}
+.SchoolList{
+    align-items: center;
+    width: 65vw;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    transition: 0.4s;
+    transition-delay: 150ms, 500ms;
+    z-index: 1;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px rgba(63, 63, 63, 0.3);
+    /* background-color: rgb(82, 82, 82); */
+    background-color: rgba(230, 230, 230, 0.13);
+}
+
+.SchoolList:hover {
+    background-color: rgb(235, 175, 78);
+    box-shadow: 10px 10px 30px rgba(63, 63, 63, 0.3);
+    z-index: 1;
+}
+
+.SchoolList:hover .SchoolName{
+    font-size: 80px;
+    z-index: 1;
+}
+
+.SchoolList:hover .SchoolDetails{
+    font-size: 30px;
+    z-index: 1;
+}
+
+.SchoolList .SchoolName {
+    text-align: left;
+    font-size: 60px;
+    line-height: 0.9;
+    transition: 0.4s;
+    transition-delay: 150ms, 500ms;
+    padding-bottom: 1%;
+}
+
+.SchoolList .SchoolDetails {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 1%;
+    line-height: 1.3;
+    transition: 0.4s;
+    transition-delay: 150ms, 500ms;
+}
+
+.SchoolList .SchoolDetails p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.image5 {
+    z-index: 0;
+    top: 40%;
+    left: 170%;
+    width: 300px;
+    position: absolute;
+    opacity: 0.75;
+}
+
+@media only screen and (max-width: 1920px) {
+
+    .EducationTitle {
+        font-size: 150px;
+    }
+
+    .SchoolList .SchoolName {
+        font-size: 50px;
+    }
+    
+    .SchoolList .SchoolDetails {
+        font-size: 25px;
+    }
+
+    .SchoolList:hover .SchoolName{
+        font-size: 60px;
+    }
+    
+    .SchoolList:hover .SchoolDetails{
+        font-size: 30px;
+    }
+    
+  }
