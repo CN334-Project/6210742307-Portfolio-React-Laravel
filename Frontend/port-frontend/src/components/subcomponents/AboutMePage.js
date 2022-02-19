@@ -40,6 +40,8 @@ function AboutMePage() {
                         {user.AboutMe}
                     </p>
                 ))}
+
+                <img className="image1" src={require('../../images/image1.jpg')} />
             </div>
         </div>
     );
