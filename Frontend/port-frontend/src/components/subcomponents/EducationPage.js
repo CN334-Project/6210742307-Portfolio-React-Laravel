@@ -8,12 +8,12 @@ function EducationPage() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8000/api/profile")
+        fetch("http://localhost:8000/api/education")
             .then(res => res.json())
             .then((result) => {
-                    console.log(result.Profile)
+                    console.log(result.Education)
                     setIsLoaded(true);
-                    setItems(result.Profile);
+                    setItems(result.Education);
                 },
                 (error) => {
                     setIsLoaded(true);
@@ -26,11 +26,11 @@ function EducationPage() {
 
   return (
     <div className="EducationSectionContainer">
-      {/* {items.map(user => (
+      {items.map(user => (
         <h1 key={user.id}>
-          {user.Name}
+          {user.SName}
         </h1>
-      ))} */}
+      ))}
         <h1>EducationPage</h1>
     </div>
   );

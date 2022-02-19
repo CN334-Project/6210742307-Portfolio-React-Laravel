@@ -11,7 +11,7 @@ function AboutMePage() {
         fetch("http://localhost:8000/api/profile")
             .then(res => res.json())
             .then((result) => {
-                console.log(result.Profile)
+                // console.log(result.Profile)
                 setIsLoaded(true);
                 setItems(result.Profile);
             },
