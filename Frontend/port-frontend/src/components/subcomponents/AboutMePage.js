@@ -33,9 +33,9 @@ function AboutMePage() {
                 <div className="Content">
                     {/* Name */}
                     {items.map(user => (
-                        <h1 className="TitleName" key={user.id}>
+                        <div className="TitleName" key={user.id}>
                             {user.Name}
-                        </h1>
+                        </div>
                     ))}
 
                     {/* About Me */}

@@ -15,12 +15,21 @@
 }
 
 .TitleName {
+    width: 65vw;
     text-align: left;
     font-size: 250px;
-    margin-top: 2%;
-    z-index: 100;
+    /* margin-top: 2%; */
+    padding: 2%;
+    z-index: 1;
     position: absolute;
     line-height: 0.9;
+    background: linear-gradient(to left, rgba(211, 214, 219, 0) 50%, rgb(235, 175, 78) 49%) right;
+    background-size: 220%;
+    transition: .3s ease-out;
+}
+
+.TitleName:hover {
+    background-position: left;
 }
 
 .TitleName h5 {

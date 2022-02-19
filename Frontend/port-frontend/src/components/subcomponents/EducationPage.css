@@ -43,12 +43,14 @@
     z-index: 1;
     border-radius: 25px;
     box-shadow: 10px 10px 20px rgba(63, 63, 63, 0.3);
-    /* background-color: rgb(82, 82, 82); */
     background-color: rgba(230, 230, 230, 0.13);
+    background: linear-gradient(to left, rgba(230, 230, 230, 0.13) 50%, rgb(235, 175, 78) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
 }
 
 .SchoolList:hover {
-    background-color: rgb(235, 175, 78);
+    background-position: left;
     box-shadow: 10px 10px 30px rgba(63, 63, 63, 0.3);
     z-index: 1;
 }

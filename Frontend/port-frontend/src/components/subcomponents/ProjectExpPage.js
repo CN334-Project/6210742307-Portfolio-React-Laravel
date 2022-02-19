@@ -1,10 +1,6 @@
 import './ProjectExpPage.css';
 import React, { useState, useEffect } from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+
 
 function ProjectExpPage() {
 
@@ -33,76 +29,48 @@ function ProjectExpPage() {
     <div className="ProjectExpSectionContainer">
       <div className="Content">
 
-        <h1 className="ProjectExpTitle">
+        <div id="ProjectExpTitle" className="ProjectExpTitle">
           Project Experience
-          <p>
-            This is some of the things of what i've done
-          </p>
-        </h1>
-
-        <div className="CardContainer">
-
-          <Card sx={{ maxWidth: 500 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="240"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                alt="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-
-          <Card sx={{ maxWidth: 500 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="240"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                alt="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-
-          <Card sx={{ maxWidth: 500 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="240"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                alt="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-
+          <br/>
+          <a href="#ProjectTitle" className="ProjectExpSubTitle">
+            These are some of the things of what i've done
+          </a>
         </div>
+
+        <div id="ProjectContainer" className="ProjectContainer">
+
+          <div id="ProjectTitle" className="ProjectTitle">
+            Projects
+          </div>
+
+          <div className="CardContainer">
+
+            <div className="CardProject">
+              <img className="CardImg1" src={require("../../images/opencv.png")}></img>
+              <div className="CardTitle">eKYC Face Recognition Project</div>
+              {/* <p>Text</p> */}
+            </div>
+
+            <div className="CardProject">
+              <img className="CardImg2" src={require("../../images/react.jpg")}></img>
+              <div className="CardTitle">COVID-19 Web Repot Project</div>
+              {/* <p>Text</p> */}
+            </div>
+
+            <div className="CardProject">
+              <img className="CardImg3" src={require("../../images/reactnative.png")}></img>
+              <div className="CardTitle">Mobile Application Project</div>
+              {/* <p>Text</p> */}
+            </div>
+
+          </div>
+
+          <div className="BackBtn">
+            <a href="#ProjectExpTitle">Back Up</a>
+          </div>
+            
+        </div>
+
       </div>
     </div>
   );

@@ -32,12 +32,12 @@ function EducationPage() {
       {isLoaded && (
         <div className="Content">
 
-          <h1 className="EducationTitle">
+          <div className="EducationTitle">
             Education
             <p>
               <p className="orange">Taeshin's</p> Education Background
             </p>
-          </h1>
+          </div>
 
           {items.map(user => (
             <div className="SchoolList" key={user.id}>
@@ -64,7 +64,7 @@ function EducationPage() {
           ))}
 
         </div>
-        
+
       )} {!isLoaded && (
         <Box sx={{ width: '100%' }}>
             <LinearProgress />
