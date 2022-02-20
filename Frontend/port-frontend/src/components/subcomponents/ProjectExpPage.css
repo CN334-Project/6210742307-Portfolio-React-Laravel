@@ -62,11 +62,12 @@
     height: 400px;
     border-radius: 30px;
     box-shadow: 10px 10px 30px rgba(63, 63, 63, 0.3);
-    transition: 0.4s;
+    transition: 0.2s;
 }
 
 .CardProject:hover {
     background-color: rgb(53, 53, 53);
+    transform: translate(0px, -50px);
     width: 20vw;
     border-radius: 30px;
     box-shadow: 10px 10px 30px rgba(63, 63, 63, 0.3);
@@ -74,7 +75,7 @@
 }
 
 .CardProject:hover .CardTitle{
-    font-size: 35px;
+    font-size: 31px;
 }
 
 .CardImg1 {
@@ -83,7 +84,7 @@
     height: 250px;
     width: 20vw;
     background-size: contain;
-    background-color: aqua;
+    box-shadow: 0px 5px 15px rgba(63, 63, 63, 0.3);
 }
 
 .CardImg2 {
@@ -92,7 +93,7 @@
     height: 250px;
     width: 20vw;
     background-size: cover;
-    background-color: aqua;
+    box-shadow: 0px 5px 15px rgba(63, 63, 63, 0.3);
 }
 
 .CardImg3 {
@@ -101,7 +102,7 @@
     height: 250px;
     width: 20vw;
     background-size: cover;
-    background-color: aqua;
+    box-shadow: 0px 5px 15px rgba(63, 63, 63, 0.3);
 }
 
 .CardTitle {

@@ -23,8 +23,6 @@ function ProjectExpPage() {
       )
   }, [])
 
-
-
   return (
     <div className="ProjectExpSectionContainer">
       <div className="Content">
@@ -46,19 +44,19 @@ function ProjectExpPage() {
           <div className="CardContainer">
 
             <div className="CardProject">
-              <img className="CardImg1" src={require("../../images/opencv.png")}></img>
+              <img className="CardImg1" src={require("../../images/openpy.png")}></img>
               <div className="CardTitle">eKYC Face Recognition Project</div>
               {/* <p>Text</p> */}
             </div>
 
             <div className="CardProject">
-              <img className="CardImg2" src={require("../../images/react.jpg")}></img>
+              <img className="CardImg2" src={require("../../images/reactlogo.png")}></img>
               <div className="CardTitle">COVID-19 Web Repot Project</div>
               {/* <p>Text</p> */}
             </div>
 
             <div className="CardProject">
-              <img className="CardImg3" src={require("../../images/reactnative.png")}></img>
+              <img className="CardImg3" src={require("../../images/reactlogo.png")}></img>
               <div className="CardTitle">Mobile Application Project</div>
               {/* <p>Text</p> */}
             </div>

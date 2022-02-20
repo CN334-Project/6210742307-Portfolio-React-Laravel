@@ -24,8 +24,6 @@ function AboutMePage() {
             )
     }, [])
 
-
-
     return (
         
         <div className="AboutMeSectionContainer">

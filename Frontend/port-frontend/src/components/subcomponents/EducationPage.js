@@ -5,7 +5,6 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 function EducationPage() {
 
-  const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
 
@@ -13,18 +12,11 @@ function EducationPage() {
     fetch("http://localhost:8000/api/education")
       .then(res => res.json())
       .then((result) => {
-        console.log(result.Education)
+        // console.log(result.Education)
         setIsLoaded(true);
         setItems(result.Education);
-      },
-        (error) => {
-          setIsLoaded(true);
-          setError(error);
-        }
-      )
+      })
   }, [])
-
-
 
   return (
     <div className="EducationSectionContainer">
