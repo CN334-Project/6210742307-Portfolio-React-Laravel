@@ -1,10 +1,65 @@
 .ContactSectionContainer {
-    /* margin-top: 10vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
-    margin-left: 10vw;
-    margin-right: 10vw; */
-    width: 100vw;
-    height: 100vh;
+    width: 30vw;
+    height: 80vh;
     background-color: rgb(37, 37, 37);
 
 }
+
+.ContactTitle{
+    color: white;
+    font-size: 8vh;
+    transform: rotate(270deg);
+    position: relative;
+    top: 35vh;
+    left: -10vw;
+
+    
+}
+
+.RightContent {
+    margin-top: 20%;
+    margin-left: 15%;
+    color: white;
+}
+
+.RightContent .Header {
+    font-size: 30px;
+    margin: 8% 2% 2% 2%;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.socials li{
+    margin: 1% 3% 1% 3%;
+}
+
+.socials img{
+    height: auto;
+    width: 25px;
+}
+
+.footerBottom {
+    position: relative;
+    top: 20vh;
+    color: white;
+}
+
+@media only screen and (max-width: 1920px) {
+
+    .RightContent {
+        margin-left: 20%;
+    }
+    
+    .footerBottom {
+        top: 10vh;
+    }
+
+  }

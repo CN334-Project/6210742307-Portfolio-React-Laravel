@@ -34,9 +34,8 @@ function EducationPage() {
 
           <div className="EducationTitle">
             Education
-            <p>
-              <p className="orange">Taeshin's</p> Education Background
-            </p>
+            <p className="orange">Taeshin's</p>
+            <p>Education Background</p>
           </div>
 
           {items.map(user => (

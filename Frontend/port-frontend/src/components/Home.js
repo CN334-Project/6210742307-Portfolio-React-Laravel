@@ -30,13 +30,6 @@ function Home() {
 
     const scrollContainer = document.querySelector("SectionContainer");
 
-    // scrollContainer.addEventListener("wheel", (evt) => {
-    //     evt.preventDefault();
-    //     scrollContainer.scrollLeft += evt.deltaY;
-    // });
-
-
-
     return (
         <div className="App">
 

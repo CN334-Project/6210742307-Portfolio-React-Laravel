@@ -25,7 +25,15 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'Name' => 'required',
+            'AboutMe' => 'required'
+            ]);
+            $Profile = new Profile;
+            $Profile->Name = $request->Name;
+            $Profile->AboutMe = $request->AboutMe;
+            $Profile->save();
+            return response()->json(['status' => $Profile->save()]);
     }
 
     /**
@@ -48,7 +56,15 @@ class ProfileController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'Name' => 'required',
+            'AboutMe' => 'required'
+            ]);
+            $Profile = Profile::find($id);
+            $Profile->Name = $request->Name;
+            $Profile->AboutMe = $request->AboutMe;
+            $Profile->save();
+            return response()->json(['status' => $Profile->save()]);
     }
 
     /**
@@ -59,6 +75,7 @@ class ProfileController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $Profile = Profile::find($id);
+        return response()->json(['status' => $Profile->delete(), 'id' => $id]);
     }
 }

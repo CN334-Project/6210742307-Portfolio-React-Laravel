@@ -40,12 +40,12 @@ function AboutMePage() {
 
                     {/* About Me */}
                     {items.map(user => (
-                        <p className="AboutMe" key={user.id}>
+                        <div className="AboutMe" key={user.id}>
                             <h5>
                                 Software Engineer
                             </h5>
                             {user.AboutMe}
-                        </p>
+                        </div>
                     ))}
 
                     <button className="ResumeBtn">Download Resume</button>

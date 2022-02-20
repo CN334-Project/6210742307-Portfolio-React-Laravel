@@ -25,7 +25,21 @@ class EducationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'SName' => 'required',
+            'Faculty' => 'required',
+            'GPA' => 'required',
+            'StartYear' => 'required',
+            'EndYear' => 'required'
+            ]);
+            $Education = new Education;
+            $Education->SName = $request->SName;
+            $Education->Faculty = $request->Faculty;
+            $Education->GPA = $request->GPA;
+            $Education->StartYear = $request->StartYear;
+            $Education->EndYear = $request->EndYear;
+            $Education->save();
+            return response()->json(['status' => $Education->save()]);
     }
 
     /**
@@ -48,7 +62,21 @@ class EducationController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'SName' => 'required',
+            'Faculty' => 'required',
+            'GPA' => 'required',
+            'StartYear' => 'required',
+            'EndYear' => 'required'
+            ]);
+            $Education = Education::find($id);
+            $Education->SName = $request->SName;
+            $Education->Faculty = $request->Faculty;
+            $Education->GPA = $request->GPA;
+            $Education->StartYear = $request->StartYear;
+            $Education->EndYear = $request->EndYear;
+            $Education->save();
+            return response()->json(['status' => $Education->save()]);
     }
 
     /**
@@ -59,6 +87,7 @@ class EducationController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $Education = Education::find($id);
+        return response()->json(['status' => $Education->delete(), 'id' => $id]);
     }
 }
